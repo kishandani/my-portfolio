@@ -1,262 +1,441 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Kishan Dani | .NET Full Stack Developer</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-        content="Kishan Dani - .NET Full Stack Developer specializing in C#, ASP.NET Core, Angular, Web API and SQL Server.">
+          content="Kishan Dani — .NET Full Stack Developer specializing in C#, ASP.NET Core, Web API, Angular, SQL Server and Microsoft Azure.">
 
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="author" content="Kishan Dani">
+
+    <title>Kishan Dani — .NET Full Stack Developer</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
-
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-
-    <!-- Typed.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
-
-    <!-- Owl Carousel -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-
-    <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
-    </script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 
-    <!-- Scroll Up -->
-    <div class="scroll-up-btn">
-        <i class="fas fa-arrow-up"></i>
+<!-- =====================================================
+     PRELOADER
+===================================================== -->
+
+<div class="preloader">
+    <div class="loader-content">
+        <div class="loader-mark">KD</div>
+        <div class="loader-line">
+            <span></span>
+        </div>
+        <p>INITIALIZING PORTFOLIO...</p>
+    </div>
+</div>
+
+
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
+
+<header class="navbar">
+
+    <div class="container nav-container">
+
+        <a href="#home" class="brand">
+            <span class="brand-symbol">&lt;</span>KD<span class="brand-symbol">/&gt;</span>
+        </a>
+
+        <nav class="nav-menu">
+
+            <a href="#home" class="nav-link active">
+                <span>01</span>
+                Home
+            </a>
+
+            <a href="#experience" class="nav-link">
+                <span>02</span>
+                Experience
+            </a>
+
+            <a href="#projects" class="nav-link">
+                <span>03</span>
+                Projects
+            </a>
+
+            <a href="#stack" class="nav-link">
+                <span>04</span>
+                Stack
+            </a>
+
+            <a href="#about" class="nav-link">
+                <span>05</span>
+                About
+            </a>
+
+            <a href="#contact" class="nav-link">
+                <span>06</span>
+                Contact
+            </a>
+
+        </nav>
+
+        <a href="./images/Kishan Dani.pdf"
+           target="_blank"
+           class="nav-resume">
+
+            Resume
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+        </a>
+
+        <button class="menu-toggle"
+                aria-label="Open navigation menu">
+
+            <span></span>
+            <span></span>
+
+        </button>
+
     </div>
 
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="max-width">
+</header>
 
-            <div class="logo">
-                <a href="#home">K<span>D.</span></a>
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<main>
+
+<section class="hero" id="home">
+
+    <div class="hero-grid"></div>
+
+    <div class="hero-glow hero-glow-one"></div>
+    <div class="hero-glow hero-glow-two"></div>
+
+    <div class="container hero-container">
+
+        <div class="hero-content">
+
+            <div class="eyebrow">
+                <span class="status-dot"></span>
+                .NET FULL STACK DEVELOPER
             </div>
 
-            <ul class="menu">
-                <li>
-                    <a href="#home">Home</a>
-                </li>
-                <li>
-                    <a href="#about">About</a>
-                </li>
-                <li>
-                    <a href="#experience">Experience</a>
-                </li>
-                <li>
-                    <a href="#skills">Skills</a>
-                </li>
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
+            <h1 class="hero-title">
 
-                <li>
-                    <a href="https://github.com/kishandani"
-                        target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
+                Kishan
+                <span>Dani.</span>
 
-                <li>
-                    <a href="https://www.linkedin.com/in/kishandani/"
-                        target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </li>
-            </ul>
+            </h1>
 
-            <div class="menu-btn">
-                <i class="fas fa-bars"></i>
+            <div class="hero-role">
+
+                <span class="role-prefix">I build</span>
+
+                <span class="typing-text">
+                    enterprise applications.
+                </span>
+
             </div>
 
-        </div>
-    </nav>
+            <p class="hero-description">
 
+                .NET Full Stack Developer with 2+ years of professional
+                experience building and enhancing enterprise web applications
+                using C#, ASP.NET Core, Web API, Angular, SQL Server and
+                Microsoft Azure.
 
-    <!-- ================= HERO ================= -->
+            </p>
 
-    <section class="home" id="home">
+            <div class="hero-tech">
 
-        <div class="home-bg"></div>
+                <span>C#</span>
+                <span>ASP.NET Core</span>
+                <span>Web API</span>
+                <span>Angular</span>
+                <span>SQL Server</span>
+                <span>Azure</span>
 
-        <div class="max-width">
+            </div>
 
-            <div class="home-content">
+            <div class="hero-actions">
 
-                <div class="hero-badge">
-                    <span></span>
-                    Available for opportunities
-                </div>
+                <a href="#experience"
+                   class="btn btn-primary">
 
-                <div class="text-1">
-                    Hello, I'm
-                </div>
+                    Explore Experience
 
-                <div class="text-2">
-                    Kishan Dani
-                </div>
+                    <i class="fa-solid fa-arrow-down"></i>
 
-                <div class="text-3">
-                    I'm a <span class="typing"></span>
-                </div>
+                </a>
 
-                <p class="hero-description">
-                    I build scalable enterprise web applications using
-                    .NET, Angular, REST APIs and SQL Server.
-                </p>
+                <a href="./images/Kishan Dani.pdf"
+                   target="_blank"
+                   class="btn btn-secondary">
 
-                <div class="hero-buttons">
+                    View Resume
 
-                    <a href="#projects" class="primary-btn">
-                        View Projects
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
+                    <i class="fa-regular fa-file-lines"></i>
 
-                    <a href="./resume.pdf"
-                        class="secondary-btn"
-                        target="_blank">
-                        Download Resume
-                        <i class="fas fa-download"></i>
-                    </a>
+                </a>
 
-                </div>
+            </div>
 
-                <div class="hero-socials">
+            <div class="social-links">
 
-                    <a href="https://github.com/kishandani"
-                        target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
+                <a href="https://www.linkedin.com/in/kishandani/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="LinkedIn">
 
-                    <a href="https://www.linkedin.com/in/kishandani/"
-                        target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
+                    <i class="fa-brands fa-linkedin-in"></i>
 
-                    <a href="mailto:YOUR_EMAIL@gmail.com">
-                        <i class="fas fa-envelope"></i>
-                    </a>
+                </a>
 
-                </div>
+                <a href="https://github.com/kishandani/my-portfolio"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="GitHub">
+
+                    <i class="fa-brands fa-github"></i>
+
+                </a>
 
             </div>
 
         </div>
 
-    </section>
 
+        <!-- TERMINAL -->
 
-    <!-- ================= ABOUT ================= -->
+        <div class="terminal-wrapper">
 
-    <section class="about" id="about">
+            <div class="terminal-window">
 
-        <div class="max-width">
+                <div class="terminal-top">
 
-            <div class="section-label">
-                ABOUT ME
+                    <div class="terminal-controls">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <div class="terminal-title">
+                        kishan@developer:~
+                    </div>
+
+                    <div class="terminal-menu">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+
+                </div>
+
+                <div class="terminal-body">
+
+                    <div class="terminal-line">
+                        <span class="terminal-green">kishan</span>
+                        <span class="terminal-white">@</span>
+                        <span class="terminal-blue">developer</span>
+                        <span class="terminal-white">:</span>
+                        <span class="terminal-purple">~</span>
+                        <span class="terminal-white">$</span>
+                        <span class="terminal-command"> whoami</span>
+                    </div>
+
+                    <div class="terminal-output">
+                        kishan-dani
+                    </div>
+
+                    <div class="terminal-line terminal-space">
+                        <span class="terminal-green">kishan</span>
+                        <span class="terminal-white">@developer</span>
+                        <span class="terminal-white">:</span>
+                        <span class="terminal-purple">~</span>
+                        <span class="terminal-white">$</span>
+                        <span class="terminal-command"> cat developer.json</span>
+                    </div>
+
+<pre class="code-block"><span class="code-brace">{</span>
+  <span class="code-key">"name"</span><span class="code-brace">:</span> <span class="code-string">"Kishan Dani"</span><span class="code-brace">,</span>
+  <span class="code-key">"role"</span><span class="code-brace">:</span> <span class="code-string">".NET Full Stack Developer"</span><span class="code-brace">,</span>
+  <span class="code-key">"backend"</span><span class="code-brace">:</span> <span class="code-string">"ASP.NET Core"</span><span class="code-brace">,</span>
+  <span class="code-key">"frontend"</span><span class="code-brace">:</span> <span class="code-string">"Angular"</span><span class="code-brace">,</span>
+  <span class="code-key">"database"</span><span class="code-brace">:</span> <span class="code-string">"SQL Server"</span><span class="code-brace">,</span>
+  <span class="code-key">"cloud"</span><span class="code-brace">:</span> <span class="code-string">"Microsoft Azure"</span>
+<span class="code-brace">}</span></pre>
+
+                    <div class="terminal-line terminal-space">
+                        <span class="terminal-green">kishan</span>
+                        <span class="terminal-white">@developer</span>
+                        <span class="terminal-white">:</span>
+                        <span class="terminal-purple">~</span>
+                        <span class="terminal-white">$</span>
+                        <span class="terminal-command"> dotnet build</span>
+                    </div>
+
+                    <div class="terminal-success">
+                        <i class="fa-solid fa-check"></i>
+                        Build succeeded.
+                    </div>
+
+                    <div class="terminal-cursor">
+                        <span>_</span>
+                    </div>
+
+                </div>
+
             </div>
 
-            <h2 class="title">
-                Turning ideas into
-                <span>digital solutions.</span>
-            </h2>
+
+            <div class="floating-card floating-card-one">
+
+                <div class="floating-icon">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+
+                <div>
+                    <strong>2+</strong>
+                    <span>Years Experience</span>
+                </div>
+
+            </div>
+
+
+            <div class="floating-card floating-card-two">
+
+                <div class="floating-icon green">
+                    <i class="fa-solid fa-layer-group"></i>
+                </div>
+
+                <div>
+                    <strong>Full Stack</strong>
+                    <span>Engineering</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="scroll-indicator">
+
+        <span>SCROLL TO EXPLORE</span>
+
+        <div class="scroll-line"></div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     ABOUT / PROFILE
+===================================================== -->
+
+<section class="about section" id="about">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div class="section-number">05 /</div>
+
+            <div>
+                <p class="section-label">PROFILE</p>
+                <h2>Engineering mindset.<br><span>Business impact.</span></h2>
+            </div>
+
+        </div>
+
+
+        <div class="about-grid">
+
+            <div class="about-intro">
+
+                <div class="about-photo">
+
+                    <img src="./images/mypic.jpeg"
+                         alt="Kishan Dani"
+                         loading="lazy">
+
+                    <div class="photo-overlay">
+                        <span>KD</span>
+                    </div>
+
+                </div>
+
+                <div class="about-caption">
+                    <span>BASED IN INDIA</span>
+                    <span>.NET / ANGULAR</span>
+                </div>
+
+            </div>
+
 
             <div class="about-content">
 
-                <div class="column left">
+                <p class="lead-text">
 
-                    <div class="profile-card">
+                    I'm a <strong>.NET Full Stack Developer</strong>
+                    focused on building enterprise web applications,
+                    REST APIs and database-driven systems.
 
-                        <div class="profile-image">
-                            <img src="./images/mypic.jpeg"
-                                alt="Kishan Dani">
-                        </div>
+                </p>
 
-                        <div class="profile-info">
+                <p>
 
-                            <h3>Kishan Dani</h3>
+                    My experience covers frontend, backend and database
+                    development, with hands-on work across ASP.NET Core,
+                    C#, Angular, SQL Server, Entity Framework and LINQ.
 
-                            <p>
-                                .NET Full Stack Developer
-                            </p>
+                </p>
 
-                            <div class="profile-line"></div>
+                <p>
 
-                            <span>
-                                C# • ASP.NET Core • Angular
-                            </span>
+                    I've also worked with authentication, authorization,
+                    role-based access control, application troubleshooting,
+                    production support and deployment through IIS and
+                    Microsoft Azure.
 
-                        </div>
+                </p>
 
-                    </div>
+                <div class="about-facts">
 
-                </div>
+                    <div class="fact">
 
-                <div class="column right">
-
-                    <div class="about-heading">
-                        .NET Full Stack Developer
-                    </div>
-
-                    <p>
-                        I am a .NET Full Stack Developer with 2+ years
-                        of professional experience building, maintaining
-                        and enhancing enterprise web applications.
-                    </p>
-
-                    <p>
-                        My experience covers frontend, backend, REST APIs,
-                        database integration, authentication,
-                        authorization, role-based access,
-                        deployment and production support.
-                    </p>
-
-                    <div class="about-stats">
-
-                        <div>
-                            <strong>2+</strong>
-                            <span>Years Experience</span>
-                        </div>
-
-                        <div>
-                            <strong>4</strong>
-                            <span>Enterprise Projects</span>
-                        </div>
-
-                        <div>
-                            <strong>.NET</strong>
-                            <span>Full Stack</span>
-                        </div>
+                        <span class="fact-number">2+</span>
+                        <span class="fact-label">YEARS EXPERIENCE</span>
 
                     </div>
 
-                    <a href="./resume.pdf"
-                        class="primary-btn"
-                        target="_blank">
-                        View Resume
-                        <i class="fas fa-file-pdf"></i>
-                    </a>
+                    <div class="fact">
+
+                        <span class="fact-number">04</span>
+                        <span class="fact-label">ENTERPRISE PROJECTS</span>
+
+                    </div>
+
+                    <div class="fact">
+
+                        <span class="fact-number">.NET</span>
+                        <span class="fact-label">CORE SPECIALIZATION</span>
+
+                    </div>
 
                 </div>
 
@@ -264,131 +443,179 @@
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <!-- ================= EXPERIENCE ================= -->
+<!-- =====================================================
+     EXPERIENCE
+===================================================== -->
 
-    <section class="experience" id="experience">
+<section class="experience section" id="experience">
 
-        <div class="max-width">
+    <div class="container">
 
-            <div class="section-label">
-                EXPERIENCE
+        <div class="section-heading">
+
+            <div class="section-number">02 /</div>
+
+            <div>
+                <p class="section-label">CAREER</p>
+                <h2>Professional<br><span>experience.</span></h2>
             </div>
 
-            <h2 class="title">
-                My professional <span>journey.</span>
-            </h2>
+        </div>
 
-            <div class="timeline">
 
-                <!-- Sattva -->
+        <div class="experience-list">
 
-                <div class="timeline-item">
 
-                    <div class="timeline-dot"></div>
+            <!-- EXPERIENCE 01 -->
 
-                    <div class="experience-card">
+            <article class="experience-item reveal">
 
-                        <div class="experience-top">
+                <div class="experience-meta">
 
-                            <div>
-                                <h3>
-                                    .NET Full Stack Developer
-                                </h3>
+                    <span class="experience-index">01</span>
 
-                                <h4>
-                                    Sattva Group Pvt. Ltd.
-                                </h4>
-                            </div>
+                    <span class="experience-date">
+                        JUN 2024 — JAN 2026
+                    </span>
 
-                            <span class="experience-date">
-                                June 2024 – January 2026
-                            </span>
+                </div>
+
+                <div class="experience-main">
+
+                    <div class="experience-header">
+
+                        <div>
+
+                            <p class="company-type">
+                                ENTERPRISE SOFTWARE
+                            </p>
+
+                            <h3>Sattva Group Pvt. Ltd.</h3>
+
+                            <p class="job-title">
+                                .NET Full Stack Developer
+                            </p>
 
                         </div>
 
+                        <div class="experience-arrow">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="experience-body">
+
                         <p>
-                            Developed and enhanced enterprise web
-                            applications using ASP.NET Core MVC,
-                            C#, Angular, SQL Server and Web API.
+                            Developed and enhanced enterprise web applications
+                            using ASP.NET Core MVC, C#, Angular, SQL Server
+                            and Web API.
                         </p>
 
                         <ul>
+
                             <li>
-                                Developed REST APIs supporting
-                                application functionality and
-                                business workflows.
+                                Contributed to end-to-end development across
+                                Intranet, Appraisal, Bills Management and LMS
+                                platforms.
                             </li>
 
                             <li>
-                                Implemented authentication,
-                                authorization and role-based access.
+                                Developed and integrated REST APIs supporting
+                                application functionality and business workflows.
                             </li>
 
                             <li>
-                                Integrated applications with SQL Server
-                                using Entity Framework and LINQ.
+                                Implemented authentication, authorization and
+                                role-based access control.
                             </li>
 
                             <li>
-                                Supported IIS and Azure deployment
-                                and production issues.
+                                Integrated application functionality with
+                                SQL Server using Entity Framework and LINQ.
                             </li>
 
                             <li>
-                                Worked across frontend, backend and
-                                database layers.
+                                Supported database optimization, application
+                                performance improvements and production issues.
                             </li>
+
+                            <li>
+                                Supported deployment through IIS and
+                                Microsoft Azure.
+                            </li>
+
                         </ul>
 
-                        <div class="experience-tags">
+                    </div>
 
-                            <span>C#</span>
-                            <span>ASP.NET Core</span>
-                            <span>Angular</span>
-                            <span>SQL Server</span>
-                            <span>Web API</span>
-                            <span>Azure</span>
+                    <div class="technology-row">
 
-                        </div>
+                        <span>C#</span>
+                        <span>ASP.NET Core</span>
+                        <span>Angular</span>
+                        <span>Web API</span>
+                        <span>SQL Server</span>
+                        <span>Entity Framework</span>
+                        <span>Azure</span>
+                        <span>IIS</span>
 
                     </div>
 
                 </div>
 
+            </article>
 
-                <!-- Aatral -->
 
-                <div class="timeline-item">
+            <!-- EXPERIENCE 02 -->
 
-                    <div class="timeline-dot"></div>
+            <article class="experience-item reveal">
 
-                    <div class="experience-card">
+                <div class="experience-meta">
 
-                        <div class="experience-top">
+                    <span class="experience-index">02</span>
 
-                            <div>
-                                <h3>
-                                    .NET Full Stack Developer
-                                </h3>
+                    <span class="experience-date">
+                        AUG 2023 — MAY 2024
+                    </span>
 
-                                <h4>
-                                    Aatral Technology Pvt. Ltd.
-                                </h4>
-                            </div>
+                </div>
 
-                            <span class="experience-date">
-                                August 2023 – May 2024
-                            </span>
+                <div class="experience-main">
+
+                    <div class="experience-header">
+
+                        <div>
+
+                            <p class="company-type">
+                                SOFTWARE DEVELOPMENT
+                            </p>
+
+                            <h3>Aatral Technology Pvt. Ltd.</h3>
+
+                            <p class="job-title">
+                                .NET Full Stack Developer
+                            </p>
 
                         </div>
 
+                        <div class="experience-arrow">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="experience-body">
+
                         <p>
                             Developed and maintained enterprise web
-                            applications using ASP.NET Core, C#,
-                            Angular and SQL Server.
+                            applications using ASP.NET Core, C#, Angular
+                            and SQL Server.
                         </p>
 
                         <ul>
@@ -398,236 +625,189 @@
                             </li>
 
                             <li>
-                                Implemented authentication,
-                                authorization and role-based access.
+                                Implemented authentication, authorization
+                                and role-based access.
                             </li>
 
                             <li>
-                                Worked across frontend, backend and
-                                database layers.
+                                Worked across frontend, backend and database
+                                layers as part of full-stack development.
                             </li>
 
                             <li>
-                                Supported deployment and production
-                                issue resolution.
+                                Supported deployment, production issue
+                                resolution and ongoing application improvements.
+                            </li>
+
+                            <li>
+                                Contributed to application performance,
+                                security and workflow automation improvements.
                             </li>
 
                         </ul>
 
-                        <div class="experience-tags">
-
-                            <span>C#</span>
-                            <span>ASP.NET Core</span>
-                            <span>Angular</span>
-                            <span>SQL Server</span>
-                            <span>REST API</span>
-
-                        </div>
-
                     </div>
 
-                </div>
+                    <div class="technology-row">
 
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= SKILLS ================= -->
-
-    <section class="skills" id="skills">
-
-        <div class="max-width">
-
-            <div class="section-label">
-                TECHNICAL SKILLS
-            </div>
-
-            <h2 class="title">
-                Technologies I <span>work with.</span>
-            </h2>
-
-            <div class="skills-grid">
-
-                <div class="skill-card">
-                    <i class="fas fa-code"></i>
-                    <h3>Languages</h3>
-
-                    <div class="skill-tags">
                         <span>C#</span>
-                        <span>JavaScript</span>
-                        <span>HTML5</span>
-                        <span>CSS3</span>
-                    </div>
-                </div>
-
-                <div class="skill-card">
-                    <i class="fas fa-server"></i>
-                    <h3>Backend & APIs</h3>
-
-                    <div class="skill-tags">
                         <span>ASP.NET Core</span>
-                        <span>ASP.NET MVC</span>
-                        <span>Web API</span>
-                        <span>REST APIs</span>
-                    </div>
-                </div>
-
-                <div class="skill-card">
-                    <i class="fab fa-angular"></i>
-                    <h3>Frontend</h3>
-
-                    <div class="skill-tags">
                         <span>Angular</span>
-                        <span>Bootstrap</span>
-                        <span>JavaScript</span>
-                        <span>HTML5</span>
-                        <span>CSS3</span>
-                    </div>
-                </div>
-
-                <div class="skill-card">
-                    <i class="fas fa-database"></i>
-                    <h3>Database</h3>
-
-                    <div class="skill-tags">
+                        <span>REST API</span>
                         <span>SQL Server</span>
-                        <span>Entity Framework</span>
-                        <span>LINQ</span>
-                        <span>Database Optimization</span>
+
                     </div>
+
                 </div>
 
-                <div class="skill-card">
-                    <i class="fas fa-shield-alt"></i>
-                    <h3>Security</h3>
+            </article>
 
-                    <div class="skill-tags">
-                        <span>Authentication</span>
-                        <span>Authorization</span>
-                        <span>RBAC</span>
-                    </div>
-                </div>
+        </div>
 
-                <div class="skill-card">
-                    <i class="fab fa-microsoft"></i>
-                    <h3>Cloud & Deployment</h3>
+    </div>
 
-                    <div class="skill-tags">
-                        <span>Microsoft Azure</span>
-                        <span>IIS</span>
-                        <span>Git</span>
-                        <span>CI/CD</span>
-                    </div>
-                </div>
+</section>
 
+
+<!-- =====================================================
+     PROJECTS
+===================================================== -->
+
+<section class="projects section" id="projects">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div class="section-number">03 /</div>
+
+            <div>
+                <p class="section-label">SELECTED WORK</p>
+                <h2>Systems I've<br><span>worked on.</span></h2>
             </div>
 
         </div>
 
-    </section>
+
+        <div class="projects-grid">
 
 
-    <!-- ================= PROJECTS ================= -->
+            <!-- PROJECT 01 -->
 
-    <section class="projects" id="projects">
+            <article class="project-card project-large reveal">
 
-        <div class="max-width">
+                <div class="project-top">
 
-            <div class="section-label">
-                PROJECTS
-            </div>
+                    <span class="project-number">01</span>
 
-            <h2 class="title">
-                Selected <span>projects.</span>
-            </h2>
+                    <span class="project-category">
+                        ENTERPRISE PORTAL
+                    </span>
 
-            <div class="project-grid">
+                </div>
 
-                <!-- Project 1 -->
-
-                <div class="project-card">
-
-                    <div class="project-number">
-                        01
-                    </div>
+                <div class="project-content">
 
                     <div class="project-icon">
-                        <i class="fas fa-building"></i>
+                        <i class="fa-solid fa-building"></i>
                     </div>
 
-                    <h3>
-                        Enterprise Intranet Portal
-                    </h3>
+                    <h3>Enterprise<br>Intranet Portal</h3>
 
                     <p>
-                        Enterprise internal portal supporting business
-                        users and internal information access, including
-                        secure access, role-based functionality and
-                        database integration.
+                        Enterprise internal portal supporting business users
+                        and internal information access, including secure
+                        access, role-based functionality and database
+                        integration.
                     </p>
 
-                    <div class="project-tags">
+                </div>
+
+                <div class="project-footer">
+
+                    <div class="project-stack">
+
                         <span>ASP.NET Core</span>
                         <span>C#</span>
                         <span>Angular</span>
                         <span>SQL Server</span>
                         <span>Web API</span>
+
                     </div>
 
                 </div>
 
+            </article>
 
-                <!-- Project 2 -->
 
-                <div class="project-card">
+            <!-- PROJECT 02 -->
 
-                    <div class="project-number">
-                        02
-                    </div>
+            <article class="project-card reveal">
+
+                <div class="project-top">
+
+                    <span class="project-number">02</span>
+
+                    <span class="project-category">
+                        BUSINESS APPLICATION
+                    </span>
+
+                </div>
+
+                <div class="project-content">
 
                     <div class="project-icon">
-                        <i class="fas fa-chart-line"></i>
+                        <i class="fa-solid fa-chart-line"></i>
                     </div>
 
-                    <h3>
-                        Appraisal Portal
-                    </h3>
+                    <h3>Appraisal<br>Portal</h3>
 
                     <p>
-                        Employee appraisal application supporting
-                        business functionality, database integration,
-                        maintenance and application enhancements.
+                        Employee appraisal application supporting business
+                        functionality, database integration, maintenance
+                        and application enhancements.
                     </p>
 
-                    <div class="project-tags">
+                </div>
+
+                <div class="project-footer">
+
+                    <div class="project-stack">
+
                         <span>ASP.NET Core</span>
                         <span>C#</span>
                         <span>Angular</span>
                         <span>SQL Server</span>
                         <span>Entity Framework</span>
+
                     </div>
 
                 </div>
 
+            </article>
 
-                <!-- Project 3 -->
 
-                <div class="project-card">
+            <!-- PROJECT 03 -->
 
-                    <div class="project-number">
-                        03
-                    </div>
+            <article class="project-card reveal">
+
+                <div class="project-top">
+
+                    <span class="project-number">03</span>
+
+                    <span class="project-category">
+                        BUSINESS APPLICATION
+                    </span>
+
+                </div>
+
+                <div class="project-content">
 
                     <div class="project-icon">
-                        <i class="fas fa-file-invoice"></i>
+                        <i class="fa-solid fa-file-invoice-dollar"></i>
                     </div>
 
-                    <h3>
-                        Bills Management Portal
-                    </h3>
+                    <h3>Bills Management<br>Portal</h3>
 
                     <p>
                         Business application supporting bills-related
@@ -635,45 +815,260 @@
                         maintenance and issue resolution.
                     </p>
 
-                    <div class="project-tags">
+                </div>
+
+                <div class="project-footer">
+
+                    <div class="project-stack">
+
                         <span>ASP.NET Core</span>
                         <span>C#</span>
                         <span>Angular</span>
                         <span>SQL Server</span>
                         <span>Web API</span>
+
                     </div>
 
                 </div>
 
+            </article>
 
-                <!-- Project 4 -->
 
-                <div class="project-card">
+            <!-- PROJECT 04 -->
 
-                    <div class="project-number">
-                        04
-                    </div>
+            <article class="project-card project-large reveal">
+
+                <div class="project-top">
+
+                    <span class="project-number">04</span>
+
+                    <span class="project-category">
+                        ENTERPRISE APPLICATION
+                    </span>
+
+                </div>
+
+                <div class="project-content">
 
                     <div class="project-icon">
-                        <i class="fas fa-graduation-cap"></i>
+                        <i class="fa-solid fa-graduation-cap"></i>
                     </div>
 
-                    <h3>
-                        LMS Portal
-                    </h3>
+                    <h3>Learning<br>Management System</h3>
 
                     <p>
-                        Enterprise learning management application
-                        supporting full-stack development, maintenance,
-                        database integration and application enhancements.
+                        Enterprise learning management application where
+                        contributions included full-stack development,
+                        maintenance, database integration and application
+                        enhancements.
                     </p>
 
-                    <div class="project-tags">
+                </div>
+
+                <div class="project-footer">
+
+                    <div class="project-stack">
+
                         <span>ASP.NET Core</span>
                         <span>C#</span>
                         <span>Angular</span>
                         <span>SQL Server</span>
+
                     </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     STACK
+===================================================== -->
+
+<section class="stack section" id="stack">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div class="section-number">04 /</div>
+
+            <div>
+                <p class="section-label">TECHNOLOGY</p>
+                <h2>My engineering<br><span>stack.</span></h2>
+            </div>
+
+        </div>
+
+
+        <div class="stack-grid">
+
+
+            <div class="stack-card reveal">
+
+                <div class="stack-number">01</div>
+
+                <div class="stack-icon">
+                    <i class="fa-solid fa-server"></i>
+                </div>
+
+                <h3>Backend & APIs</h3>
+
+                <p>
+                    Building application logic, REST APIs and
+                    enterprise backend systems.
+                </p>
+
+                <div class="stack-tags">
+
+                    <span>C#</span>
+                    <span>ASP.NET Core</span>
+                    <span>ASP.NET MVC</span>
+                    <span>ASP.NET</span>
+                    <span>Web API</span>
+                    <span>REST APIs</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="stack-card reveal">
+
+                <div class="stack-number">02</div>
+
+                <div class="stack-icon">
+                    <i class="fa-solid fa-display"></i>
+                </div>
+
+                <h3>Frontend</h3>
+
+                <p>
+                    Developing responsive application interfaces
+                    and Angular-based experiences.
+                </p>
+
+                <div class="stack-tags">
+
+                    <span>Angular</span>
+                    <span>JavaScript</span>
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>Bootstrap</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="stack-card reveal">
+
+                <div class="stack-number">03</div>
+
+                <div class="stack-icon">
+                    <i class="fa-solid fa-database"></i>
+                </div>
+
+                <h3>Data</h3>
+
+                <p>
+                    Working with SQL-backed applications,
+                    ORM and database integration.
+                </p>
+
+                <div class="stack-tags">
+
+                    <span>SQL Server</span>
+                    <span>Entity Framework</span>
+                    <span>LINQ</span>
+                    <span>Database Integration</span>
+                    <span>Optimization</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="stack-card reveal">
+
+                <div class="stack-number">04</div>
+
+                <div class="stack-icon">
+                    <i class="fa-solid fa-cloud"></i>
+                </div>
+
+                <h3>Cloud & Delivery</h3>
+
+                <p>
+                    Supporting application deployment,
+                    environments and production delivery.
+                </p>
+
+                <div class="stack-tags">
+
+                    <span>Microsoft Azure</span>
+                    <span>IIS</span>
+                    <span>Git</span>
+                    <span>CI/CD</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="stack-card reveal">
+
+                <div class="stack-number">05</div>
+
+                <div class="stack-icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+
+                <h3>Security</h3>
+
+                <p>
+                    Implementing secure application access
+                    and authorization workflows.
+                </p>
+
+                <div class="stack-tags">
+
+                    <span>Authentication</span>
+                    <span>Authorization</span>
+                    <span>RBAC</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="stack-card reveal">
+
+                <div class="stack-number">06</div>
+
+                <div class="stack-icon">
+                    <i class="fa-solid fa-diagram-project"></i>
+                </div>
+
+                <h3>Architecture</h3>
+
+                <p>
+                    Working across application layers and
+                    requirement-driven enterprise systems.
+                </p>
+
+                <div class="stack-tags">
+
+                    <span>MVC</span>
+                    <span>Layered Architecture</span>
+                    <span>Full Stack</span>
+                    <span>Troubleshooting</span>
 
                 </div>
 
@@ -681,41 +1076,64 @@
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <!-- ================= EDUCATION ================= -->
+<!-- =====================================================
+     EDUCATION
+===================================================== -->
 
-    <section class="education">
+<section class="education section">
 
-        <div class="max-width">
+    <div class="container">
 
-            <div class="section-label">
-                EDUCATION
+        <div class="section-heading">
+
+            <div class="section-number">07 /</div>
+
+            <div>
+                <p class="section-label">EDUCATION</p>
+                <h2>Academic<br><span>foundation.</span></h2>
             </div>
 
-            <h2 class="title">
-                Academic <span>background.</span>
-            </h2>
+        </div>
 
-            <div class="education-card">
 
-                <div class="education-icon">
-                    <i class="fas fa-graduation-cap"></i>
-                </div>
+        <div class="education-card reveal">
 
-                <div>
+            <div class="education-year">
+                2019<br>
+                <span>2022</span>
+            </div>
 
-                    <h3>
-                        Bachelor of Science – Computer Science
-                    </h3>
+            <div class="education-divider"></div>
 
-                    <p>
-                        Gulbarga University
-                    </p>
+            <div class="education-content">
+
+                <p class="education-label">
+                    BACHELOR'S DEGREE
+                </p>
+
+                <h3>
+                    Bachelor of Science — Computer Science
+                </h3>
+
+                <p class="university">
+                    Gulbarga University
+                </p>
+
+                <div class="education-details">
 
                     <span>
-                        2019 – 2022 &nbsp; • &nbsp; CGPA: 8.04
+                        <i class="fa-solid fa-calendar"></i>
+                        2019 — 2022
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-star"></i>
+                        CGPA: 8.04
                     </span>
 
                 </div>
@@ -724,153 +1142,238 @@
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <!-- ================= CONTACT ================= -->
+<!-- =====================================================
+     CONTACT
+===================================================== -->
 
-    <section class="contact" id="contact">
+<section class="contact section" id="contact">
 
-        <div class="max-width">
+    <div class="container">
 
-            <div class="section-label">
-                CONTACT
+        <div class="contact-box">
+
+            <div class="contact-left">
+
+                <p class="section-label">
+                    06 / CONTACT
+                </p>
+
+                <h2>
+                    Let's build<br>
+                    <span>something useful.</span>
+                </h2>
+
+                <p class="contact-description">
+
+                    Interested in .NET, full-stack development,
+                    enterprise applications or software engineering
+                    opportunities?
+
+                </p>
+
+                <div class="contact-links">
+
+                    <a href="https://www.linkedin.com/in/kishandani/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+
+                        <span class="contact-link-icon">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </span>
+
+                        <span>
+                            <small>CONNECT</small>
+                            LinkedIn
+                        </span>
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+
+                    <a href="https://github.com/kishandani/my-portfolio"
+                       target="_blank"
+                       rel="noopener noreferrer">
+
+                        <span class="contact-link-icon">
+                            <i class="fa-brands fa-github"></i>
+                        </span>
+
+                        <span>
+                            <small>CODE</small>
+                            GitHub
+                        </span>
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+
+                    <a href="./images/Kishan Dani.pdf"
+                       target="_blank">
+
+                        <span class="contact-link-icon">
+                            <i class="fa-regular fa-file-lines"></i>
+                        </span>
+
+                        <span>
+                            <small>DOCUMENT</small>
+                            Resume
+                        </span>
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+                </div>
+
             </div>
 
-            <h2 class="title">
-                Let's build something <span>great.</span>
-            </h2>
 
-            <div class="contact-content">
+            <div class="contact-right">
 
-                <div class="contact-left">
+                <div class="contact-terminal">
 
-                    <h3>
-                        Have a project or opportunity?
-                    </h3>
+                    <div class="terminal-top">
 
-                    <p>
-                        I'm open to discussing .NET development
-                        opportunities, enterprise applications and
-                        interesting technical projects.
-                    </p>
+                        <div class="terminal-controls">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
 
-                    <div class="contact-info">
+                        <div class="terminal-title">
+                            contact.sh
+                        </div>
 
-                        <a href="mailto:YOUR_EMAIL@gmail.com">
-                            <i class="fas fa-envelope"></i>
-                            <span>YOUR_EMAIL@gmail.com</span>
-                        </a>
+                    </div>
+
+                    <div class="contact-terminal-body">
+
+                        <p>
+                            <span class="terminal-green">$</span>
+                            echo "Let's connect"
+                        </p>
+
+                        <p class="terminal-muted">
+                            .NET Full Stack Developer
+                        </p>
+
+                        <p class="terminal-muted">
+                            C# · ASP.NET Core · Angular
+                        </p>
+
+                        <p class="terminal-muted">
+                            SQL Server · Azure · Web API
+                        </p>
+
+                        <br>
 
                         <a href="https://www.linkedin.com/in/kishandani/"
-                            target="_blank">
-                            <i class="fab fa-linkedin"></i>
-                            <span>LinkedIn</span>
-                        </a>
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="terminal-link">
 
-                        <a href="https://github.com/kishandani"
-                            target="_blank">
-                            <i class="fab fa-github"></i>
-                            <span>GitHub</span>
+                            <span>./connect-linkedin.sh</span>
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
                         </a>
 
                     </div>
 
                 </div>
 
-                <div class="contact-right">
-
-                    <form
-                        action="https://formsubmit.co/YOUR_EMAIL@gmail.com"
-                        method="POST">
-
-                        <input type="hidden"
-                            name="_subject"
-                            value="Portfolio Contact">
-
-                        <input type="hidden"
-                            name="_next"
-                            value="https://kishandani.github.io/my-portfolio/thanks.html">
-
-                        <div class="form-row">
-
-                            <input type="text"
-                                name="name"
-                                placeholder="Your name"
-                                required>
-
-                            <input type="email"
-                                name="email"
-                                placeholder="Your email"
-                                required>
-
-                        </div>
-
-                        <input type="text"
-                            name="subject"
-                            placeholder="Subject"
-                            required>
-
-                        <textarea
-                            name="message"
-                            placeholder="Your message..."
-                            required></textarea>
-
-                        <button type="submit">
-                            Send Message
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
-
-                    </form>
-
-                </div>
-
             </div>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
+
+</main>
 
 
-    <!-- ================= FOOTER ================= -->
+<!-- =====================================================
+     FOOTER
+===================================================== -->
 
-    <footer>
+<footer>
 
-        <div class="footer-content">
+    <div class="container footer-container">
 
-            <div class="logo">
-                KD<span>.</span>
-            </div>
+        <div class="footer-brand">
+
+            <a href="#home" class="brand">
+                <span class="brand-symbol">&lt;</span>KD<span class="brand-symbol">/&gt;</span>
+            </a>
 
             <p>
                 .NET Full Stack Developer
             </p>
 
-            <div class="footer-socials">
+        </div>
 
-                <a href="https://github.com/kishandani"
-                    target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
+        <div class="footer-center">
 
-                <a href="https://www.linkedin.com/in/kishandani/"
-                    target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-
-            </div>
+            <span>
+                Built with Caffeine & Code.
+            </span>
 
         </div>
 
-        <div class="copyright">
-            © 2026 Kishan Dani. All rights reserved.
+        <div class="footer-right">
+
+            <a href="https://www.linkedin.com/in/kishandani/"
+               target="_blank"
+               rel="noopener noreferrer">
+
+                LinkedIn
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </a>
+
+            <a href="https://github.com/kishandani/my-portfolio"
+               target="_blank"
+               rel="noopener noreferrer">
+
+                GitHub
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </a>
+
         </div>
 
-    </footer>
+    </div>
+
+    <div class="copyright">
+
+        © <span id="year"></span> Kishan Dani. All rights reserved.
+
+    </div>
+
+</footer>
 
 
-    <script src="js/script.js"></script>
+<!-- SCROLL TOP -->
+
+<button class="scroll-top"
+        aria-label="Scroll to top">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+
+<!-- JS -->
+
+<script src="./js/script.js"></script>
 
 </body>
-
 </html>
