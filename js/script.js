@@ -338,8 +338,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     }
 
-
-
     /* =====================================================
        PROJECT CARD INTERACTION
     ===================================================== */
